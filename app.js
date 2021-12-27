@@ -12,4 +12,4 @@ const mainRouter = require('./routes/mainRouter.js')
 // Acá falta el archivo de rutas y después las vistas de EJS
 app.use('/', mainRouter)
 
-app.listen(3000, () => { console.log('Servidor arriba en el puerto 3000 🤓👌');})
+app.listen(process.env.PORT || 3000, () => { console.log('Servidor arriba en el puerto 3000 🤓👌');})
